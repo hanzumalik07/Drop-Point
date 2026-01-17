@@ -3,91 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drop Point | Where Elegance Begins</title>
+    <title>Drop Point | Maroon Handblock Saree</title>
     <style>
-        :root { --royal-purple: #6a0dad; --gold: #d4af37; --dark: #1a1a1a; }
-        body { font-family: 'Times New Roman', serif; margin: 0; background-color: #fff; color: var(--dark); }
-        
-        /* Top Announcement Bar */
-        .top-bar { background: linear-gradient(90deg, #6a0dad, #b041ff); color: white; text-align: center; padding: 10px; font-size: 0.9rem; letter-spacing: 1px; }
-        
-        /* Header & Logo */
-        header { padding: 20px; text-align: center; border-bottom: 1px solid #eee; }
-        .logo { font-size: 35px; font-weight: bold; color: var(--royal-purple); text-transform: uppercase; letter-spacing: 3px; }
-        
-        /* Main Banner */
-        .hero { 
-            position: relative; height: 400px; 
-            background: url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200') center/cover;
-            display: flex; align-items: center; justify-content: center; color: white;
-        }
-        .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); }
-        .hero-content { z-index: 1; text-align: center; border: 2px solid white; padding: 20px 40px; }
-        .hero-content h2 { font-size: 2rem; margin: 0; }
-
-        /* Products Section */
-        .section-title { text-align: center; margin: 40px 0; font-size: 24px; color: var(--royal-purple); position: relative; }
-        .section-title::after { content: ''; width: 50px; height: 2px; background: var(--gold); position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); }
-
-        .container { display: flex; flex-wrap: wrap; justify-content: center; padding: 10px; }
-        .card { width: 320px; margin: 15px; border: 1px solid #f0f0f0; transition: 0.3s; position: relative; }
-        .card img { width: 100%; height: 450px; object-fit: cover; }
-        .card-info { padding: 15px; text-align: center; }
-        .card-info h3 { margin: 10px 0; font-size: 1.2rem; }
-        .price { color: var(--royal-purple); font-weight: bold; font-size: 1.3rem; }
-
-        /* Buy Buttons */
-        .buy-now { 
-            display: block; background: var(--dark); color: white; padding: 12px; 
-            text-decoration: none; margin-top: 10px; font-weight: bold; transition: 0.3s;
-        }
-        .buy-now:hover { background: var(--royal-purple); }
-        .whatsapp-btn { background: #25D366 !important; }
-
-        footer { background: var(--dark); color: white; text-align: center; padding: 30px; margin-top: 50px; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 20px; background: #fff; color: #333; }
+        .product-container { max-width: 500px; margin: 0 auto; }
+        .brand-name { font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
+        .product-title { font-size: 24px; font-weight: bold; line-height: 1.2; margin-bottom: 15px; }
+        .main-img { width: 100%; border-radius: 4px; margin-bottom: 20px; }
+        .price-row { margin: 15px 0; display: flex; align-items: center; gap: 10px; }
+        .old-price { text-decoration: line-through; color: #888; font-size: 18px; }
+        .current-price { font-size: 22px; font-weight: bold; color: #000; }
+        .sale-badge { background: #000; color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 14px; }
+        .quantity-label { font-size: 14px; color: #555; margin-bottom: 8px; }
+        .quantity-box { display: flex; align-items: center; border: 1px solid #ccc; width: fit-content; margin-bottom: 20px; }
+        .qty-btn { padding: 10px 15px; background: none; border: none; cursor: pointer; font-size: 18px; }
+        .qty-input { width: 40px; text-align: center; border: none; font-size: 16px; border-left: 1px solid #ccc; border-right: 1px solid #ccc; }
+        .btn { display: block; width: 100%; padding: 15px; text-align: center; text-decoration: none; font-weight: bold; border-radius: 2px; margin-bottom: 10px; transition: 0.3s; }
+        .btn-outline { border: 1px solid #000; color: #000; background: #fff; }
+        .btn-fill { background: #000; color: #fff; }
+        .description { font-size: 14px; color: #666; line-height: 1.6; margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
 
-    <div class="top-bar">BRIDAL SAREES | FESTIVAL COLLECTION | PARTY WEAR</div>
+<div class="product-container">
+    <div class="brand-name">Drop Point</div>
+    <h1 class="product-title">Maroon Handblock Print Mul Cotton Saree | Soft & Lightweight Daily Wear</h1>
+    
+    <img src="https://via.placeholder.com/500x700" class="main-img" alt="Maroon Saree">
 
-    <header>
-        <div class="logo">DROP POINT</div>
-        <p style="font-style: italic; color: #777;">Where Elegance Begins</p>
-    </header>
-
-    <div class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h2>SHOP KANJIVARAM</h2>
-        </div>
+    <div class="price-row">
+        <span class="old-price">Rs. 3,499.00</span>
+        <span class="current-price">Rs. 1,299.00</span>
+        <span class="sale-badge">Sale</span>
     </div>
 
-    <h2 class="section-title">New Arrivals</h2>
-
-    <div class="container">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=400" alt="Saree">
-            <div class="card-info">
-                <h3>Royal Silk Saree</h3>
-                <p class="price">?2,499</p>
-                <a href="https://wa.me/918604534614?text=Mujhe Drop Point se ye Saree chahiye" class="buy-now whatsapp-btn">Order on No. 1</a>
-                <a href="https://wa.me/919888987763?text=Mujhe Drop Point se ye Saree chahiye" class="buy-now whatsapp-btn">Order on No. 2</a>
-       <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=400" alt="Saree">
-            <div class="card-info">
-                <h3>Royal Silk Saree</h3>
-                <p class="price">?2,499</p>
-                <a href="https://wa.me/918604534614?text=Mujhe Drop Point se ye Saree chahiye" class="buy-now whatsapp-btn">Order on No. 1</a>
-                <a href="https://wa.me/919888987763?text=Mujhe Drop Point se ye Saree chahiye" class="buy-now whatsapp-btn">Order on No. 2</a>
-            </div>          </div>
-        </div>
+    <div class="quantity-label">Quantity</div>
+    <div class="quantity-box">
+        <button class="qty-btn" onclick="changeQty(-1)">−</button>
+        <input type="text" id="qty" value="1" class="qty-input" readonly>
+        <button class="qty-btn" onclick="changeQty(1)">+</button>
     </div>
 
-    <footer>
-        <p>Drop Point &copy; 2026</p>
-        <p>Contact: 8604534614 | 9888987763</p>
-    </footer>
+    <a href="#" class="btn btn-outline" onclick="addToCart()">Add to cart</a>
+    <a href="https://wa.me/918604534614?text=Mujhe Maroon Handblock Saree chahiye" class="btn btn-fill">Buy it now</a>
+
+    <div class="description">
+        Elevate your everyday elegance with this <strong>Maroon Handblock Print Mul Cotton Saree</strong>, crafted for comfort and style.
+    </div>
+</div>
+
+<script>
+    function changeQty(val) {
+        let qtyInput = document.getElementById('qty');
+        let currentQty = parseInt(qtyInput.value);
+        if (currentQty + val >= 1) {
+            qtyInput.value = currentQty + val;
+        }
+    }
+    function addToCart() {
+        alert("Item cart mein add ho gaya hai!");
+    }
+</script>
 
 </body>
-
 </html>
