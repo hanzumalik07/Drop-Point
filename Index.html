@@ -84,4 +84,100 @@ Please confirm availability`
       </div>
     </div>
   `;
+
 });
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.header {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header nav {
+  margin-top: 10px;
+}
+
+.header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.products {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.price {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.buy-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background: #25D366;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #eee;
+}
+const WHATSAPP = "9889877763";
+
+const products = [
+  { name: "Banarasi Silk Saree", price: "₹4,999", img: "images/1.jpg" },
+  { name: "Designer Party Wear Saree", price: "₹5,499", img: "images/2.jpg" },
+  { name: "Maheshwari Cotton Saree", price: "₹2,799", img: "images/3.jpg" },
+  { name: "Wedding Special Saree", price: "₹6,999", img: "images/4.jpg" },
+  { name: "Ready To Wear Saree", price: "₹3,499", img: "images/5.jpg" },
+  { name: "Soft Silk Saree", price: "₹4,299", img: "images/6.jpg" },
+  { name: "Traditional Cotton Saree", price: "₹1,999", img: "images/7.jpg" },
+  { name: "Festive Special Saree", price: "₹5,999", img: "images/8.jpg" }
+];
+
+const productList = document.getElementById("products");
+
+products.forEach(p => {
+  const message = encodeURIComponent(
+`DROP POINT - New Order
+
+Product:
