@@ -1,41 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Drop Point</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Drop Point | Saree Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      background: #222;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .buy-btn {
+      display: inline-block;
+      background: #25D366;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
   <h1>DROP POINT</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Banarasi Silk</a>
-    <a href="#">Maheshwari Cotton</a>
-    <a href="#">Ready To Wear</a>
-    <a href="#">Track Order</a>
-  </nav>
+  <p>Premium Saree & Fashion Store</p>
 </header>
 
-<section class="hero">
-  <h2>India’s Premium Saree Store</h2>
-  <p>Order directly on WhatsApp or Call Us</p>
-</section>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Banarasi</a>
+  <a href="#">Maheshwari</a>
+  <a href="#">Ready to Wear</a>
+  <a href="#">Track Order</a>
+</nav>
 
-<main id="product-list"></main>
+<div class="container">
+  <h2>Our Products</h2>
 
-<div class="contact-buttons">
-  <a href="tel:+919889877763" class="call">📞 Call Now</a>
-  <a href="https://wa.me/919889877763" class="whatsapp">💬 WhatsApp</a>
+  <div class="products">
+
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="images/images/saree1.jpg" alt="Saree 1">
+      <h3>Banarasi Silk Saree</h3>
+      <div class="price">₹2,499</div>
+      <a class="buy-btn" 
+         href="https://wa.me/919999999999?text=I want to buy Banarasi Silk Saree (₹2499)">
+         Buy on WhatsApp
+      </a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="images/images/saree2.jpg" alt="Saree 2">
+      <h3>Maheshwari Saree</h3>
+      <div class="price">₹1,999</div>
+      <a class="buy-btn" 
+         href="https://wa.me/919999999999?text=I want to buy Maheshwari Saree (₹1999)">
+         Buy on WhatsApp
+      </a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="images/images/saree3.jpg" alt="Saree 3">
+      <h3>Designer Saree</h3>
+      <div class="price">₹3,199</div>
+      <a class="buy-btn" 
+         href="https://wa.me/919999999999?text=I want to buy Designer Saree (₹3199)">
+         Buy on WhatsApp
+      </a>
+    </div>
+
+  </div>
 </div>
 
 <footer>
-© 2026 Drop Point | All Rights Reserved
+  <p>© 2026 Drop Point | Order via WhatsApp</p>
+  <p>📞 Call: 9999999999</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
