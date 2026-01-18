@@ -4,18 +4,23 @@ const products = [
   {
     name: "Banarasi Silk Saree",
     price: "₹4,999",
-    image: "https://via.placeholder.com/400x500?text=Banarasi+Saree"
-  },
-  {
+    image: "saree.jpg" 
+   },
     name: "Maheshwari Cotton Saree",
     price: "₹2,499",
-    image: "https://via.placeholder.com/400x500?text=Maheshwari+Saree"
+    image: "saree2.jpg"
   },
   {
     name: "Ready To Wear Saree",
     price: "₹3,299",
-    image: "https://via.placeholder.com/400x500?text=Ready+To+Wear"
+    image: "saree3.jpg"
   }
+  {
+    name: "Ready To Wear Saree",
+    price: "₹3,299",
+    image: "saree4.jpg"
+  }
+
 ];
 
 const list = document.getElementById("product-list");
