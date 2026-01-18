@@ -94,3 +94,172 @@
 <div class="container">
     <div class="image-gallery">
         <img src="
+
+Drop-Point/
+│── index.html
+│── style.css
+│── script.js
+│── images/
+│    ├─ s1.jpg
+│    ├─ s2.jpg
+│    ├─ s3.jpg
+│    ├─ s4.jpg
+│    ├─ s5.jpg
+│    ├─ s6.jpg
+│    ├─ s7.jpg
+│    ├─ s8.jpg
+
+            body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+.products {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.price {
+  color: #c0392b;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.buy-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background: #25D366;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #eee;
+  font-size: 14px;
+}
+
+      const WHATSAPP_PRIMARY = "9889877763";
+const WHATSAPP_SECONDARY = "8604534614";
+
+const products = [
+  {
+    code: "DP-001",
+    name: "Banarasi Silk Saree",
+    price: "₹4,999",
+    image: "images/s1.jpg"
+  },
+  {
+    code: "DP-002",
+    name: "Designer Party Wear Saree",
+    price: "₹5,499",
+    image: "images/s2.jpg"
+  },
+  {
+    code: "DP-003",
+    name: "Maheshwari Cotton Saree",
+    price: "₹2,799",
+    image: "images/s3.jpg"
+  },
+  {
+    code: "DP-004",
+    name: "Wedding Special Saree",
+    price: "₹6,999",
+    image: "images/s4.jpg"
+  },
+  {
+    code: "DP-005",
+    name: "Ready To Wear Saree",
+    price: "₹3,499",
+    image: "images/s5.jpg"
+  },
+  {
+    code: "DP-006",
+    name: "Soft Silk Saree",
+    price: "₹4,299",
+    image: "images/s6.jpg"
+  },
+  {
+    code: "DP-007",
+    name: "Traditional Cotton Saree",
+    price: "₹1,999",
+    image: "images/s7.jpg"
+  },
+  {
+    code: "DP-008",
+    name: "Festive Special Saree",
+    price: "₹5,999",
+    image: "images/s8.jpg"
+  }
+];
+
+const container = document.getElementById("products");
+
+products.forEach(p => {
+  const msg = encodeURIComponent(
+`🛍️ DROP POINT – New Order
+
+📌 Product: ${p.name}
+🆔 Code: ${p.code}
+💰 Price: ${p.price}
+
+👤 Customer Name:
+📞 Mobile:
+📦 Address:
+🔢 Quantity: 1
+
+Please confirm availability`
+  );
+
+  container.innerHTML += `
+    <div class="card">
+      <img src="${p.image}">
+      <div class="card-content">
+        <h3>${p.name}</h3>
+        <p class="price">${p.price}</p>
+        <a class="buy-btn"
+           href="https://wa.me/91${WHATSAPP_PRIMARY}?text=${msg}"
+           target="_blank">
+           Buy Now
+        </a>
+      </div>
+    </div>
+  `;
+});      
