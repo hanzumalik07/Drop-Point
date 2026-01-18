@@ -1,61 +1,80 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
 }
 
 header {
-    background: #111;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
-nav {
-    margin-top: 10px;
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
 
 nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 14px;
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+.hero {
+  background: linear-gradient(to right, #000, #333);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 #product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .product {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
 }
 
-.product h3 {
-    margin: 10px 0 5px;
-}
-
-.product p {
-    color: #555;
+.product img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 .product button {
-    background: black;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
+  margin-top: 10px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
 }
 
+.contact-buttons {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-buttons a {
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.call { background: #007bff; }
+.whatsapp { background: #25d366; }
+
 footer {
-    background: #eee;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+  background: #eee;
+  text-align: center;
+  padding: 15px;
 }
