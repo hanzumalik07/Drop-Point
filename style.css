@@ -20,72 +20,7 @@ header {
   text-align: center;
   border-bottom: 2px solid #c9a24d;
 }
-/* ===== IMAGE ZOOM EFFECT ===== */
-.img-box {
-  overflow: hidden;
-  border-radius: 10px;
-}
 
-.img-box img {
-  transition: transform 0.6s ease;
-}
-
-.card:hover .img-box img {
-  transform: scale(1.08);
-}
-
-/* ===== GOLD BADGE ===== */
-.badge {
-  position: absolute;
-  background: linear-gradient(45deg, gold, #c9a24d);
-  color: #000;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 20px;
-  top: 12px;
-  left: 12px;
-  z-index: 2;
-}
-
-/* ===== CARD POSITION FIX ===== */
-.card {
-  position: relative;
-}
-
-/* ===== CALL BUTTON ===== */
-.call-btn {
-  display: block;
-  margin-top: 10px;
-  text-align: center;
-  padding: 11px;
-  border-radius: 30px;
-  background: linear-gradient(90deg, #f7971e, #ffd200);
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-
-.call-btn:hover {
-  transform: scale(1.03);
-}
-
-/* ===== FADE IN ANIMATION ===== */
-.card {
-  animation: fadeUp 0.8s ease both;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 header h1 {
   font-size: 32px;
   letter-spacing: 3px;
@@ -190,5 +125,71 @@ footer {
 
   .card img {
     max-height: 360px;
+  }
+}
+/* ===== IMAGE ZOOM EFFECT ===== */
+.img-box {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-box img {
+  transition: transform 0.6s ease;
+}
+
+.card:hover .img-box img {
+  transform: scale(1.08);
+}
+
+/* ===== GOLD BADGE ===== */
+.badge {
+  position: absolute;
+  background: linear-gradient(45deg, gold, #c9a24d);
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+}
+
+/* ===== CARD POSITION FIX ===== */
+.card {
+  position: relative;
+}
+
+/* ===== CALL BUTTON ===== */
+.call-btn {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  padding: 11px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #f7971e, #ffd200);
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.call-btn:hover {
+  transform: scale(1.03);
+}
+
+/* ===== FADE IN ANIMATION ===== */
+.card {
+  animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
