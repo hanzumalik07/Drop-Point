@@ -1,80 +1,53 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: #f5f5f5;
 }
 
 header {
-  background: #000;
+  background: black;
   color: white;
-  text-align: center;
   padding: 15px;
-}
-
-nav a {
-  color: white;
-  margin: 0 12px;
-  text-decoration: none;
-}
-
-.hero {
-  background: linear-gradient(to right, #000, #333);
-  color: white;
-  padding: 40px 20px;
   text-align: center;
 }
 
-#product-list {
+.products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
-.product {
+.card {
   background: white;
-  border-radius: 10px;
   padding: 15px;
+  border-radius: 8px;
   text-align: center;
 }
 
-.product img {
+.card img {
   width: 100%;
-  border-radius: 8px;
+  height: 300px;
+  object-fit: cover;
 }
 
-.product button {
-  margin-top: 10px;
-  background: black;
+.card h3 {
+  margin: 10px 0;
+}
+
+.card button {
+  background: green;
   color: white;
   border: none;
   padding: 10px;
   width: 100%;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.contact-buttons {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.contact-buttons a {
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  border-radius: 50px;
-  text-align: center;
-}
-
-.call { background: #007bff; }
-.whatsapp { background: #25d366; }
-
 footer {
-  background: #eee;
+  background: #222;
+  color: white;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
 }
