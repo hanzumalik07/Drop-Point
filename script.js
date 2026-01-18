@@ -4,21 +4,21 @@ const products = [
   {
     name: "Banarasi Silk Saree",
     price: "₹4,999",
-    image: "saree.jpg" 
+   <img src="images/saree.jpg">
    },
     name: "Maheshwari Cotton Saree",
     price: "₹2,499",
-    image: "saree2.jpg"
+   <img src="images/saree.jpg">
   },
   {
     name: "Ready To Wear Saree",
     price: "₹3,299",
-    image: "saree3.jpg"
+ <img src="images/saree.jpg">
   }
   {
     name: "Ready To Wear Saree",
     price: "₹3,299",
-    image: "saree4.jpg"
+    <img src="images/saree.jpg">
   }
 
 ];
