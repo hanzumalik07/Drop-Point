@@ -1,0 +1,87 @@
+const WHATSAPP_PRIMARY = "9889877763";
+const WHATSAPP_SECONDARY = "8604534614";
+
+const products = [
+  {
+    code: "DP-001",
+    name: "Banarasi Silk Saree",
+    price: "₹4,999",
+    image: "images/s1.jpg"
+  },
+  {
+    code: "DP-002",
+    name: "Designer Party Wear Saree",
+    price: "₹5,499",
+    image: "images/s2.jpg"
+  },
+  {
+    code: "DP-003",
+    name: "Maheshwari Cotton Saree",
+    price: "₹2,799",
+    image: "images/s3.jpg"
+  },
+  {
+    code: "DP-004",
+    name: "Wedding Special Saree",
+    price: "₹6,999",
+    image: "images/s4.jpg"
+  },
+  {
+    code: "DP-005",
+    name: "Ready To Wear Saree",
+    price: "₹3,499",
+    image: "images/s5.jpg"
+  },
+  {
+    code: "DP-006",
+    name: "Soft Silk Saree",
+    price: "₹4,299",
+    image: "images/s6.jpg"
+  },
+  {
+    code: "DP-007",
+    name: "Traditional Cotton Saree",
+    price: "₹1,999",
+    image: "images/s7.jpg"
+  },
+  {
+    code: "DP-008",
+    name: "Festive Special Saree",
+    price: "₹5,999",
+    image: "images/s8.jpg"
+  }
+];
+
+const container = document.getElementById("products");
+
+products.forEach(p => {
+  const msg = encodeURIComponent(
+`🛍️ DROP POINT – New Order
+
+📌 Product: ${p.name}
+🆔 Code: ${p.code}
+💰 Price: ${p.price}
+
+👤 Customer Name:
+📞 Mobile:
+📦 Address:
+🔢 Quantity: 1
+
+Please confirm availability`
+  );
+
+  container.innerHTML += `
+    <div class="card">
+      <img src="${p.image}">
+      <div class="card-content">
+        <h3>${p.name}</h3>
+        <p class="price">${p.price}</p>
+        <a class="buy-btn"
+           href="https://wa.me/91${WHATSAPP_PRIMARY}?text=${msg}"
+           target="_blank">
+           Buy Now
+        </a>
+      </div>
+    </div>
+  `;
+});
