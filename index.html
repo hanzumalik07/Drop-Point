@@ -1,183 +1,31 @@
-const WHATSAPP_PRIMARY = "9889877763";
-const WHATSAPP_SECONDARY = "8604534614";
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Drop Point | Premium Saree Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-const products = [
-  {
-    code: "DP-001",
-    name: "Banarasi Silk Saree",
-    price: "₹4,999",
-    image: "images/s1.jpg"
-  },
-  {
-    code: "DP-002",
-    name: "Designer Party Wear Saree",
-    price: "₹5,499",
-    image: "images/s2.jpg"
-  },
-  {
-    code: "DP-003",
-    name: "Maheshwari Cotton Saree",
-    price: "₹2,799",
-    image: "images/s3.jpg"
-  },
-  {
-    code: "DP-004",
-    name: "Wedding Special Saree",
-    price: "₹6,999",
-    image: "images/s4.jpg"
-  },
-  {
-    code: "DP-005",
-    name: "Ready To Wear Saree",
-    price: "₹3,499",
-    image: "images/s5.jpg"
-  },
-  {
-    code: "DP-006",
-    name: "Soft Silk Saree",
-    price: "₹4,299",
-    image: "images/s6.jpg"
-  },
-  {
-    code: "DP-007",
-    name: "Traditional Cotton Saree",
-    price: "₹1,999",
-    image: "images/s7.jpg"
-  },
-  {
-    code: "DP-008",
-    name: "Festive Special Saree",
-    price: "₹5,999",
-    image: "images/s8.jpg"
-  }
-];
+<header class="header">
+  <h1>DROP POINT</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Banarasi Silk</a>
+    <a href="#">Maheshwari Cotton</a>
+    <a href="#">Ready To Wear</a>
+    <a href="#">Track Order</a>
+  </nav>
+</header>
 
-const container = document.getElementById("products");
+<section class="products" id="products">
+  <!-- Products will be loaded here by script.js -->
+</section>
 
-products.forEach(p => {
-  const msg = encodeURIComponent(
-`🛍️ DROP POINT – New Order
+<footer class="footer">
+  <p>© 2026 Drop Point | Order on WhatsApp</p>
+</footer>
 
-📌 Product: ${p.name}
-🆔 Code: ${p.code}
-💰 Price: ${p.price}
-
-👤 Customer Name:
-📞 Mobile:
-📦 Address:
-🔢 Quantity: 1
-
-Please confirm availability`
-  );
-
-  container.innerHTML += `
-    <div class="card">
-      <img src="${p.image}">
-      <div class="card-content">
-        <h3>${p.name}</h3>
-        <p class="price">${p.price}</p>
-        <a class="buy-btn"
-           href="https://wa.me/91${WHATSAPP_PRIMARY}?text=${msg}"
-           target="_blank">
-           Buy Now
-        </a>
-      </div>
-    </div>
-  `;
-
-});
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-}
-
-.header {
-  background: #111;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.header nav {
-  margin-top: 10px;
-}
-
-.header nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.products {
-  padding: 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.card-body {
-  padding: 15px;
-}
-
-.card-body h3 {
-  margin: 10px 0;
-  font-size: 18px;
-}
-
-.price {
-  color: #c0392b;
-  font-weight: bold;
-}
-
-.buy-btn {
-  display: block;
-  margin-top: 10px;
-  padding: 10px;
-  background: #25D366;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer {
-  text-align: center;
-  padding: 15px;
-  background: #eee;
-}
-const WHATSAPP = "9889877763";
-
-const products = [
-  { name: "Banarasi Silk Saree", price: "₹4,999", img: "images/1.jpg" },
-  { name: "Designer Party Wear Saree", price: "₹5,499", img: "images/2.jpg" },
-  { name: "Maheshwari Cotton Saree", price: "₹2,799", img: "images/3.jpg" },
-  { name: "Wedding Special Saree", price: "₹6,999", img: "images/4.jpg" },
-  { name: "Ready To Wear Saree", price: "₹3,499", img: "images/5.jpg" },
-  { name: "Soft Silk Saree", price: "₹4,299", img: "images/6.jpg" },
-  { name: "Traditional Cotton Saree", price: "₹1,999", img: "images/7.jpg" },
-  { name: "Festive Special Saree", price: "₹5,999", img: "images/8.jpg" }
-];
-
-const productList = document.getElementById("products");
-
-products.forEach(p => {
-  const message = encodeURIComponent(
-`DROP POINT - New Order
-
-Product:
+<script src="script.js"></script>
+</body>
+</html>
