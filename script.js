@@ -1,47 +1,43 @@
-const phone = "919889877763"; // ← अपना WhatsApp नंबर
+const whatsappNumber = "919999999999"; 
+// 👆 yahan apna WhatsApp number likho (91 ke sath)
 
 const products = [
   {
     name: "Banarasi Silk Saree",
     price: "₹4,999",
-   <img src="saree.jpg">
-   },
+    img: "images/saree1.jpg"
+  },
+  {
     name: "Maheshwari Cotton Saree",
     price: "₹2,499",
-   <img src="saree.jpg">
+    img: "images/saree2.jpg"
   },
   {
     name: "Ready To Wear Saree",
     price: "₹3,299",
- <img src="saree.jpg">
+    img: "images/saree3.jpg"
   }
-  {
-    name: "Ready To Wear Saree",
-    price: "₹3,299",
-    <img src="/aree.jpg">
-  }
-
 ];
 
-const list = document.getElementById("product-list");
+const productList = document.getElementById("productList");
 
 products.forEach(p => {
-  const div = document.createElement("div");
-  div.className = "product";
+  const card = document.createElement("div");
+  card.className = "card";
 
-  div.innerHTML = `
-    <img src="${p.image}">
+  card.innerHTML = `
+    <img src="${p.img}">
     <h3>${p.name}</h3>
     <p>${p.price}</p>
-    <button onclick="order('${p.name}', '${p.price}')">
+    <button onclick="order('${p.name}','${p.price}')">
       Buy on WhatsApp
     </button>
   `;
 
-  list.appendChild(div);
+  productList.appendChild(card);
 });
 
 function order(name, price) {
-  const msg = `Hello Drop Point, I want to buy:\n${name}\nPrice: ${price}`;
-  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`);
+  const msg = `Hello Drop Point,%0AProduct: ${name}%0APrice: ${price}`;
+  window.open(`https://wa.me/${whatsappNumber}?text=${msg}`, "_blank");
 }
